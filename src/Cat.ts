@@ -1,8 +1,8 @@
-import Animal from "./Animal";
+import Animal, { Being } from "./Animal";
 
 export default class Cat extends Animal {
-  constructor(name: string, weight: number, height: number, length: number) {
-    super(name, weight, height, length)
+  constructor(cat: Being) {
+    super(cat)
   }
 
   public move(): string {

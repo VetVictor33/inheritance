@@ -1,10 +1,16 @@
+import { Being } from "./Animal";
 import Cat from "./Cat";
 import Dog from "./Dog";
 import Whale from "./Whale";
 
-const cat = new Cat('Frajola', 4, 15, 40)
-const dog = new Dog('PiuPiu', 40, 50, 100)
-const whale = new Whale('Friwily', 100000, 1000, 3000)
+
+const frajola: Being = { name: 'Frajola', weight: 4, height: 15, length: 40 }
+const piupiu: Being = { name: 'PiuPiu', weight: 40, height: 50, length: 100 }
+const friwily: Being = { name: 'Friwily', weight: 100000, height: 1000, length: 3000 }
+
+const cat = new Cat(frajola)
+const dog = new Dog(piupiu)
+const whale = new Whale(friwily)
 
 console.log(cat.talk())
 console.log(cat.move())

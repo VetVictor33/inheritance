@@ -1,14 +1,16 @@
+export type Being = { name: string, weight: number, height: number, length: number }
+
 export default abstract class Animal {
   protected name: string
   protected weight: number
   protected height: number
   protected length: number
 
-  constructor(name: string, weight: number, height: number, length: number) {
-    this.name = name
-    this.weight = weight
-    this.height = height
-    this.length = length
+  constructor(animal: Being) {
+    this.name = animal.name
+    this.weight = animal.weight
+    this.height = animal.height
+    this.length = animal.length
   }
 
   public abstract move(): string
